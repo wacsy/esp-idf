@@ -38,7 +38,9 @@ API Guides
     :SOC_ULP_SUPPORTED: ULP Coprocessor <ulp>
     :esp32: ULP Coprocessor (Legacy GNU Make) <ulp-legacy>
     :SOC_RISCV_COPROC_SUPPORTED: ULP-RISC-V Coprocessor <ulp-risc-v>
-    Unit Testing <unit-tests>
+    Unit Testing (Target) <unit-tests>
+    Unit Testing (Linux Host) <linux-host-testing>
     :esp32: Unit Testing (Legacy GNU Make) <unit-tests-legacy>
-    :SOC_USB_SUPPORTED: USB Console <usb-console>
+    :SOC_USB_SUPPORTED: USB OTG Console <usb-otg-console>
+    :SOC_USB_SERIAL_JTAG_SUPPORTED: USB Serial/JTAG Controller Console <usb-serial-jtag-console>
     WiFi Driver <wifi>

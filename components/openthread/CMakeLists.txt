@@ -10,11 +10,15 @@ if(CONFIG_OPENTHREAD_ENABLED)
         "openthread/src/lib/hdlc"
         "openthread/src/lib/spinel"
         "openthread/src/ncp"
+        "openthread/examples/platforms/"
         "private_include")
 
     set(src_dirs
+        "openthread/examples/apps/cli"
+        "openthread/examples/platforms/utils"
         "openthread/src/cli"
         "openthread/src/core/api"
+        "openthread/src/core/backbone_router"
         "openthread/src/core/coap"
         "openthread/src/core/common"
         "openthread/src/core/crypto"
@@ -30,7 +34,10 @@ if(CONFIG_OPENTHREAD_ENABLED)
         "openthread/src/lib/spinel"
         "port")
 
-    set(exclude_srcs "openthread/src/core/common/extension_example.cpp")
+    set(exclude_srcs
+        "openthread/examples/apps/cli/main.cpp"
+        "openthread/examples/platforms/utils/logging_rtt.c"
+        "openthread/src/core/common/extension_example.cpp")
 
     if(CONFIG_OPENTHREAD_FTD)
         set(device_type "OPENTHREAD_FTD=1")

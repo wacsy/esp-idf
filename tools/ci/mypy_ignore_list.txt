@@ -4,10 +4,7 @@ components/efuse/test_efuse_host/efuse_tests.py
 components/esp32s2/test/gen_digital_signature_tests.py
 components/esp_local_ctrl/python/esp_local_ctrl_pb2.py
 components/esp_netif/test_apps/component_ut_test.py
-components/espcoredump/corefile/elf.py
 components/espcoredump/corefile/gdb.py
-components/espcoredump/corefile/loader.py
-components/espcoredump/corefile/xtensa.py
 components/espcoredump/test/test_espcoredump.py
 components/lwip/weekend_test/net_suite_test.py
 components/mbedtls/esp_crt_bundle/gen_crt_bundle.py
@@ -65,7 +62,6 @@ examples/get-started/blink/example_test.py
 examples/get-started/hello_world/example_test.py
 examples/peripherals/gpio/generic_gpio/example_test.py
 examples/peripherals/i2c/i2c_tools/example_test.py
-examples/peripherals/i2s_adc_dac/tools/generate_audio_file.py
 examples/peripherals/rmt/ir_protocols/example_test.py
 examples/peripherals/sdio/sdio_test.py
 examples/peripherals/twai/twai_alert_and_recovery/example_test.py
@@ -97,6 +93,8 @@ examples/protocols/mqtt/ssl_ds/configure_ds.py
 examples/protocols/mqtt/tcp/mqtt_tcp_example_test.py
 examples/protocols/mqtt/ws/mqtt_ws_example_test.py
 examples/protocols/mqtt/wss/mqtt_wss_example_test.py
+examples/protocols/openssl_client/example_test.py
+examples/protocols/openssl_server/example_test.py
 examples/protocols/pppos_client/example_test.py
 examples/protocols/sntp/example_test.py
 examples/protocols/sockets/tcp_client/example_test.py
@@ -143,6 +141,7 @@ examples/system/ota/otatool/otatool_example.py
 examples/system/ota/simple_ota_example/example_test.py
 examples/system/perfmon/example_test.py
 examples/system/select/example_test.py
+examples/system/startup_time/example_test.py
 examples/system/sysview_tracing/example_test.py
 examples/system/sysview_tracing_heap_log/example_test.py
 examples/system/task_watchdog/example_test.py
@@ -156,7 +155,6 @@ tools/ble/lib_gatt.py
 tools/check_python_dependencies.py
 tools/check_term.py
 tools/ci/check_artifacts_expire_time.py
-tools/ci/check_build_warnings.py
 tools/ci/check_callgraph.py
 tools/ci/check_codeowners.py
 tools/ci/check_deprecated_kconfigs.py
@@ -171,7 +169,6 @@ tools/ci/checkout_project_ref.py
 tools/ci/ci_fetch_submodule.py
 tools/ci/deploy_docs.py
 tools/ci/envsubst.py
-tools/ci/idf_ci_utils.py
 tools/ci/normalize_clangtidy_path.py
 tools/ci/python_packages/gitlab_api.py
 tools/ci/python_packages/idf_http_server_test/adder.py
@@ -266,6 +263,7 @@ tools/test_apps/protocols/mqtt/publish_connect_test/app_test.py
 tools/test_apps/protocols/openssl/app_test.py
 tools/test_apps/protocols/pppos/app_test.py
 tools/test_apps/system/gdb_loadable_elf/app_test.py
+tools/test_apps/system/longjmp_test/app_test.py
 tools/test_apps/system/memprot/app_test.py
 tools/test_apps/system/monitor_ide_integration/app_test.py
 tools/test_apps/system/panic/app_test.py
